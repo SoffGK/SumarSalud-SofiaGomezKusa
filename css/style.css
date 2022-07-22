@@ -1,0 +1,381 @@
+/** Colores
+#F15412 Rojo
+#000000 Negro
+#34B3F1 Celeste
+#EEEEEE Gris
+#D91122 Bordo
+#3084F2 Celeste
+#2B88D9 Azul Francia
+#F20F0F Rojo
+#F2F2F2 Blanco Mate
+
+Mis Fuentes:
+font-family: 'Karma', serif;
+font-family: 'Mulish', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/** GRID INICIO*/
+
+/*Grid**/
+.gridInicio {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "header header header"
+    "titulo titulo titulo"
+    "portadaHome portadaHome portadaHome"
+    "footer footer footer";
+    gap: 15px;
+     }
+
+.header {
+    display: grid;
+    grid-column: 2;
+    grid-template-rows:auto;
+    grid-area: header;
+    background-color:#F20F0F;
+    width: 100%;
+   display: flex;
+    flex-direction: row;
+    border: #D91122;
+    border-width: 10px;
+    border-style: solid;
+}
+
+/*logo inicio de página*/
+.logoPrincipal {
+    align-items: center;
+    position: relative;
+    border-color: #F2F2F2;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 10px;
+    padding: 5px;
+    height: 200px;
+    width: 75%;
+    }
+    
+    /* imagen de portada*/
+    .portadaHome{
+        margin-left: 30px;
+        border-color: #F2F2F2;
+        border-width: 3px;
+        border-style:dotted;
+        justify-content: center;
+        padding: 0px;
+        margin-top: 0px;
+        margin-bottom:8px ;
+        align-items: center;
+        width: 1600px;
+        height: 700px;
+    }
+
+
+.titulo {
+    grid-area: titulo;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.portadaHome{
+    grid-area: portadaHome;
+    justify-content: center;
+    height: 100%;
+}
+
+.footer{
+    grid-area: footer;
+    list-style: none;
+    text-decoration: none;
+    background-color:#D91122;
+    padding: 5px;
+    border-color: #2F9ec1;
+    border-width: 2px;
+    border-style: groove;
+    
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 20px;
+    list-style: none;
+}
+
+
+
+
+
+
+body{
+    background-color:#2b7ddf;
+    align-items: center;
+    justify-content: center;
+    width: 100%;        
+}
+
+header{
+   
+    margin: 0px;
+    padding: 0px;    
+    
+}
+
+header ul{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+    margin-left: 140px;
+    margin-right: 6px;
+    list-style: none;
+    text-decoration: none;
+    background-color: #F20F0F;
+        width: 25%;
+    height: 100%;
+    
+    
+}
+
+li{ 
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    
+    
+    
+}
+
+nav li{
+    text-decoration: none;
+    padding: 10px;
+    background-color:#F20F0F;
+    margin-top: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+    
+    
+     
+}
+nav ul li a{
+    display: flex;    
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    font-family:'Mulish', sans-serif;
+    text-align: center;
+    justify-content: center;
+    
+    
+}
+
+
+
+article{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family:'Mulish', sans-serif;
+    font-size: 25px;
+    color: #000;
+}
+/* FOOTER**/
+.footer{
+    grid-area: footer;
+    list-style: none;
+    text-decoration: none;
+    background-color:#D91122;
+    padding: 5px;
+    border-color: #2F9ec1;
+    border-width: 2px;
+    border-style: groove;
+    margin-bottom: 0px;
+    
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+footer ul li a{    
+    text-decoration: none;
+    font-family:'Karma', serif ;
+    color: #000;
+    font-size: 25px;
+    font-weight: 200;
+    font-style:normal;  
+    }
+
+
+    @media (min-width:600px ) {
+        .gridInicio {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-areas: 
+            "header header"
+            "header header"
+            "titulo titulo"
+            "portadaHome portadaHome"
+            "footer footer" ;
+            gap: 10px;
+             }
+    }
+
+
+
+ 
+ /* CURSOS**/
+
+
+     .portadaCursos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+       /* justify-content:space-between;*/
+       justify-content: center;
+        align-content: center;
+        }
+
+     .cursoPortada {
+        align-content: center;
+        width:357px;
+        height: 212px;
+        padding: 20px;
+       margin-left: 150px;
+        margin-right: 150px; 
+        margin-bottom: 50px;
+        margin-top: 20px;
+        border: #F20F0F;
+        border-width: 5px;
+        border-radius: 10%;
+        border-style: solid;
+            }
+
+.poster:hover{
+    transform: scale(1.5);
+}
+.curso1{
+    grid-area: curso1;
+}   
+.curso2{
+    grid-area: curso2;
+}  
+.curso3{
+    grid-area: curso3;
+}  
+.curso4{
+    grid-area: curso4;
+}  
+.curso5{
+    grid-area: curso5;
+}  
+.curso6{
+    grid-area: curso6;
+}
+
+.cursoPortada:hover{
+    transform: center;
+}
+
+ 
+
+
+
+/*CONTACTOS**/
+
+.formularioContacto {
+    font-family:'Mulish', sans-serif;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-style: double;
+    border-color: #F2F2F2;
+    border-width: 8px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color:#F20F0F;
+    padding: 10px;
+    inline-size: auto;
+    text-align: left;
+    color: #F2F2F2;
+}
+
+.formularioContacto input{
+    background-color: #34b3f1;
+    color: #000;
+    border-color: #EEEEEE;
+    font-family: 'Mulish', sans-serif;
+    
+}
+.formularioContacto select{
+    background-color: #34b3f1;
+    color: #000;
+    border-color: #EEEEEE;
+    font-family: 'Mulish', sans-serif;
+}
+
+/**EMPRESAS*/
+
+.tituloEmpresas {
+    font-family:'Karma', sans-serif;
+    font-size: xx-large;
+    font-style: italic;
+    color: #000;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    display:block;
+
+}
+
+.cursoEmpresas {    
+     width:371px;
+    height: 223px;
+    padding: 20px;
+    justify-content: space-between;   
+    margin-bottom: 100px;
+    margin-top: 100px;
+    border: #efb810;
+    border-width: 5px;
+    border-radius: 10%;
+    border-style: solid;
+    margin-inline: 50px;
+    
+    
+}
+
+.empresasSection {
+    justify-content: space-between;
+    
+}
+
+
+/*** CALENDARIO**/
+
+.calendarioCursos {
+    margin-left: 400px;
+    margin-right: 430px;
+    margin-top: 0px;
+    border-color: #D91122;
+    border-width: 15px;
+    border-style: groove;   
+    justify-content: center;
+    
+}
+
+
+
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Sumar Salud</title>
+    <link rel="icon" href="../img/logoNavegador.svg">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <!-- encabezado/barra de navegacion-->
+        <img class="logoPrincipal" src="../img/logoHorizontalHeader.jpg" alt="Logo SS">
+        <nav>
+              <ul> 
+                     <li>
+                            <a href="../index.html">INICIO</a>
+                     </li>
+                     <li>
+                            <a href="contacto.html">CONTACTO</a>
+                     </li>      
+                     <li>   
+                            <a href="cursos.html">CURSOS</a>
+                     </li>
+                     <li>
+                            <a href="empresas.html">EMPRESAS</a>
+                     </li>
+                     <li>
+                            <a href="calendario.html">CALENDARIO</a>
+                     </li>
+                     <li>
+                            <a href="#pie"> PIE DE PAGINA</a>
+                    </li>
+              </ul>
+        </nav>
+     </header>
+
+    <form class="formularioContacto">
+       <label class=".nombreForm" for="nombre_apellido">Ingrese Nombre y Apellido</label>
+       <input type="text" name="nombre_apellido"/>
+       <br>
+       <label class="apellido.form" for="edad">Ingrese Edad</label>
+       <input type="number" name="edad"/>
+       <br>
+       <textarea type="text" name="observaciones" ></textarea>
+       <br>
+
+
+       <input type="submit" value="Enviar info"/>
+       <input type="reset" value="Borrar info"/>
+       <input type="button" value="Fuera de funcionamiento"/>
+       <br>
+
+
+       <div>Presencial</div>
+       <input type="radio" name="modalidad" value="Presencial"/>
+       <div>Virtual</div>
+       <input type="radio" name="modalidad" value="Virtual"/>
+       <br>
+
+       <select name="cursos">
+              <option value="Curso 1">Curso 1</option>
+              <option value="Curso 2">Curso 2</option>
+              <option value="Curso 3">Curso 3</option>
+              <option value="Curso 4">Curso 4</option>
+       </select>
+
+       <div>Acepta términos y condiciones</div>
+       <input type="checkbox" name="acepta" value="1"/>
+       
+    </form> 
+    <br>
+    <br>
+
+    <footer  class="footer" id="pie">
+       <ul>
+              <li>
+                     <a href="https://www.facebook.com/sumar.saludcapacitaciones/about" target="_blank">Facebook</a>
+              </li>
+              <li>
+                     <a href="https://www.instagram.com/sumarsalud.cap/" target="_blank">Instagram</a>
+              </li>
+              <li>
+                     <a href= "https://wa.me/message/OLFQDSZPAKBRC1" target="_blank">Whatsapp</a>
+              </li>
+       </ul>
+
+     </footer>
+</body>
+</html>
