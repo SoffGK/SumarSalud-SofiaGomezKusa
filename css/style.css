@@ -265,6 +265,8 @@ footer ul li a{
 
 .poster:hover{
     transform: scale(1.5);
+    transition: 3s;
+
 }
 .curso1{
     grid-area: curso1;
