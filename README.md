@@ -1,2 +1,0 @@
-# SumarSalud-SofiaGomezKusa
-# SumarSalud-SofiaGomezKusa
