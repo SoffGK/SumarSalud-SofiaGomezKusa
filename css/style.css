@@ -116,7 +116,7 @@ footer ul {
 
 
 body{
-    background-color:#D91122;
+    background-color:#34b3f1;
     align-items: center;
     justify-content: center;
     width: 100%;        
@@ -265,7 +265,7 @@ footer ul li a{
 
 .poster:hover{
     transform: scale(1.5);
-    transition: 2s;
+    transition: 3s;
 
 }
 .curso1{
